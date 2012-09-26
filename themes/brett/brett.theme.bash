@@ -27,8 +27,8 @@ prompt_command () {
   local RED="\[\033[0;31m\]"
   local BLACK="\[\033[0;30m\]"
   local DEFAULT="\[\033[0;39m\]"
-  local TITLEBAR='\[\e]2;`pwdtail`\a'
-  export PS1="\[${TITLEBAR}\]${CYAN}[ ${BCYAN}\u${GREEN}@${BCYAN}\h${WHITE} ${TIME} ${CYAN}]${GRAY}\w\n${GREEN}${BRANCH}${DEFAULT}$ "
+  local TITLEBAR="\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"
+  export PS1="${TITLEBAR}${CYAN}[ ${BCYAN}\u${GREEN}@${BCYAN}\h${WHITE} ${TIME} ${CYAN}]${GRAY}\w\n${GREEN}${BRANCH}${DEFAULT}$ "
 }
 
 PROMPT_COMMAND=prompt_command;

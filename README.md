@@ -55,3 +55,4 @@ Thanks, and happing bashing!
 * [List of contributors][contribute]
 
 [contribute]: https://github.com/revans/bash-it/contributors
+testing
