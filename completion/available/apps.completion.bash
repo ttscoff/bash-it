@@ -141,7 +141,7 @@ complete -o bashdefault -o default -o nospace -F _complete_esproj esp 2>/dev/nul
 
 _complete_subl_proj ()
 {
-    CODEDIR="/Users/`whoami`/Dropbox/Code"
+    CODEDIR="$HOME/Dropbox/Code"
     local cur prev
     local LC_ALL='C'
 
@@ -168,5 +168,4 @@ _complete_subl_proj ()
     return 0
 }
 
-complete -o bashdefault -o default -o nospace -F _complete_subl_proj sublp 2>/dev/null || complete -o default -o nospace -F _complete_subl_proj sublp
-
+complete -o bashdefault -o default -o nospace -F _complete_subl_proj subp 2>/dev/null || complete -o default -o nospace -F _complete_subl_proj subp

@@ -3,8 +3,8 @@
 cite about-plugin
 about-plugin 'download jquery files into current project'
 
-[[ -z "$JQUERY_VERSION_NUMBER" ]] && JQUERY_VERSION_NUMBER="1.6.1"
-[[ -z "$JQUERY_UI_VERSION_NUMBER" ]] && JQUERY_UI_VERSION_NUMBER="1.8.13"
+[[ -z "$JQUERY_VERSION_NUMBER" ]] && JQUERY_VERSION_NUMBER="1"
+[[ -z "$JQUERY_UI_VERSION_NUMBER" ]] && JQUERY_UI_VERSION_NUMBER="1"
 
 function rails_jquery {
   about 'download rails.js into public/javascripts'
@@ -23,7 +23,8 @@ function jquery_install {
   else
       version="$1"
   fi
-  curl -o public/javascripts/jquery.js "http://ajax.googleapis.com/ajax/libs/jquery/$version/jquery.min.js"
+  mkdir -p javascripts
+  curl -o javascripts/jquery.js "http://ajax.googleapis.com/ajax/libs/jquery/$version/jquery.min.js"
 }
 
 function jquery_ui_install {
@@ -36,6 +37,6 @@ function jquery_ui_install {
   else
       version="$1"
   fi
-
-  curl -o public/javascripts/jquery_ui.js "http://ajax.googleapis.com/ajax/libs/jqueryui/$version/jquery-ui.min.js"
+  mkdir -p javascripts
+  curl -o javascripts/jquery_ui.js "http://ajax.googleapis.com/ajax/libs/jqueryui/$version/jquery-ui.min.js"
 }
