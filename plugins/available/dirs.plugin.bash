@@ -40,7 +40,7 @@ function dirs-help() {
   echo "Use the power of directory stacking to move"
   echo "between several locations with ease."
   echo
-  echo "d	: Show directory stack."
+  echo "d	  : Show directory stack."
   echo "po	: Remove current location from stack."
   echo "pc	: Adds current location to stack."
   echo "pu <dir>: Adds given location to stack."
