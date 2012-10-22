@@ -77,8 +77,8 @@ alias a='fasd -a'
 alias s='fasd -si'
 alias sd='fasd -sid'
 alias sf='fasd -sif'
-alias d='fasd -d'
-alias f='fasd -f'
+alias dr='fasd -d'
+alias fl='fasd -f'
 # function to execute built-in cd
 fasd_cd() { [ \$# -gt 1 ] && cd "\$(fasd -e echo "\$@")" || fasd "\$@"; }
 alias z='fasd_cd -d'
