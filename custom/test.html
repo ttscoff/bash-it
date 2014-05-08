@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="feature_chompcommentimages feature_s3upload feature_switch feature_powwowtest" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+	<head>
+		<title>Find Out Which App Is Constantly Using Location Services and Killing Your Battery</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="en" />
+		<meta http-equiv="refresh" content="86400" />
+		<meta name="robots" content="all" />
+							<meta name="keywords" content="ios tip, iphone, ipod touch, ipad, battery life, battery, smartphones, ios, location services, gps, wtfimage, Lifehacker" />
+				<meta name="description" content=" You can do a lot to improve your iPhone&#039;s battery life, but sometimes you just get a bad app that will suck up your battery all on its own. Here&#039;s one trick we&#039;ve discovered for finding out which app that is. " />
+
+						<link rel="image_src" href="http://img.gawkerassets.com/img/17r7qae99vjwvjpg/fb.jpg" />
+				<meta property="og:image" content="http://img.gawkerassets.com/img/17r7qae99vjwvjpg/fb.jpg" />
+				<meta property="og:site_name" content="Lifehacker"/>
+		<meta property="og:title" content="Find Out Which App Is Constantly Using Location Services and Killing Your Battery" />
+		<meta property="og:description" content="You can do a lot to improve your iPhone's battery life, but sometimes you just get a bad app that will suck up your battery all on its own. Here's one trick we've discovered for finding out which app that is." />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery"/>
+		<!--
+		<meta property="fb:page_id" content="7568536355" />
+		-->
+
+		<link rel="apple-touch-icon" sizes="144x144" href="http://ganja.gawkerassets.com/assets/v10.lifehacker.com/img/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="http://ganja.gawkerassets.com/assets/v10.lifehacker.com/img/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="http://ganja.gawkerassets.com/assets/v10.lifehacker.com/img/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="http://ganja.gawkerassets.com/assets/v10.lifehacker.com/img/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" href="http://ganja.gawkerassets.com/assets/v10.lifehacker.com/img/apple-touch-icon.png" />
+
+		<link rel="shortcut icon" href="/assets/base/img/favicon/lifehacker.ico" />
+
+		<link rel="alternate" type="application/rss+xml" title="Lifehacker - All stories" href="http://feeds.gawker.com/lifehacker/full" />
+		<link rel="alternate" type="application/rss+xml" title="Lifehacker - Top stories only (fewer posts)" href="http://lifehacker.com/top/index.xml" />
+
+
+		<link rel="canonical" href="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery" />
+		<meta name="viewport" content="width=1024" />
+
+<!--[if gte IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<![endif]-->
+
+
+
+<!--  IE9 pinning -->
+<!--[if gte IE 9]>
+	<meta name="application-name" content="Lifehacker, tips and downloads for getting things done" />
+	<meta name="msapplication-tooltip" content="Lifehacker, tips and downloads for getting things done" />
+	<meta name="msapplication-starturl" content="http://lifehacker.com" />
+
+		<meta name="msapplication-task" content="name=Hive Five;action-uri=http://lifehacker.com/hivefive;icon-uri=http://cache.gawker.com/assets/base/img/favicon/lifehacker.ico" />
+		<meta name="msapplication-task" content="name=Dealhacker;action-uri=http://lifehacker.com/dealhacker;icon-uri=http://cache.gawker.com/assets/base/img/favicon/lifehacker.ico" />
+		<meta name="msapplication-task" content="name=Lifehacker Top 10;action-uri=http://lifehacker.com/LifehackerTop10;icon-uri=http://cache.gawker.com/assets/base/img/favicon/lifehacker.ico" />
+		<meta name="msapplication-task" content="name=Ask Lifehacker;action-uri=http://lifehacker.com/AskLifehacker;icon-uri=http://cache.gawker.com/assets/base/img/favicon/lifehacker.ico" />
+		<meta name="msapplication-task" content="name=HD brought to you by IE9;action-uri=http://lifehacker.com?hd;icon-uri=http://cache.gawker.com/assets/base/img/favicon/lifehacker.ico" />
+	<![endif]-->	<script type="text/javascript">
+		var featureAliases = {"ssologin":"switch","powwow-comments":"newcomments","disablecomments":"disablecomments","newprofile":"newprofile"};
+	</script>
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+		<link rel="stylesheet" type="text/css" href="http://ganja.gawkerassets.com/assets/base.v10.static/css/../static/base.v10.static.20120628_3.css" />
+		<link rel="stylesheet" type="text/css" href="http://ganja.gawkerassets.com/assets/v10.lifehacker.com/css/static.css?rev=20120628_3" />
+
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.jquery.20120628_3.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.jqueryplugin.20120628_3.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.framework.20120628_3.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.misc.20120628_3.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.widget.20120628_3.js"></script>
+
+		
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+					<!-- Begin comScore Tag -->
+<script>
+	var comscore_script = gawker_getScript('http://b.scorecardresearch.com/beacon.js');
+	var comscore_beacon = { c1:2, c2:"6770184", c3:"", c4:"http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery", c5:"", c6:"", c15:"754d3b148df7a597947f5556cbe06628" };
+</script>
+<!-- End comScore Tag -->
+			<script type="text/javascript">
+		(function() {
+			var tk = document.createElement('script');
+			tk.src = 'http://fonts.gawker.com/zvc4iwz.js';
+			tk.type = 'text/javascript';
+			tk.async = 'true';
+			tk.onload = tk.onreadystatechange = function() {
+				var rs = this.readyState;
+				if (rs && rs != 'complete' && rs != 'loaded') return;
+				try { Typekit.load(); } catch (e) {}
+			};
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(tk, s);
+		})();
+	</script>
+		<script id="adrobotcontainer" type="text/javascript"></script>
+		<script>
+			window.adRobot = jQuery('#adrobotcontainer').AdRobot({
+				'takeover_css_name': 'static_style.css'
+			}).data('AdRobot');
+		</script>
+<!-- runScript --><script language="JavaScript" type="text/javascript">
+	window.adRobot.marqueeConfig(0, {"marquee_should_run":false});
+</script>
+
+		<script type="text/javascript">
+			var sponge_client = {
+				sponge_host: 'api.gawker.com/sponge',
+				update_interval: '60',
+				views_limit: 10000,
+				comments_limit: 100, 
+				forDomain: true,
+				stats_enabled: true			};
+		</script>
+
+
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/scripts.js?rev=20120628_3"></script>
+		<script type="text/javascript">
+			window.pageType = 'post';
+			var has_hybrid_widget = false;
+			var presence_options = {'isReloading':false};
+			var chartbeat_options = {'host' : 'dev.gawker.com:8888','interval' : 10,'runChartbeat' : true};
+			var republishOptions = { 'sites' : {"43":"advertising","11":"deadspin","7":"gawker","4":"gizmodo","8":"io9","12":"jalopnik","39":"jezebel","9":"kotaku","17":"lifehacker","37":"artists","42":"gawkershop","30":"sploid"}, 'siteIds'	: [43,11,7,4,8,12,39,9,17,37,42,30] };
+			var forumTagList = ["tips","openthread","howto","windowsexperts","macexperts","iphoneexperts","androidexperts","homescreenshowcase","techhelp"];
+			var siteConfig = {"id":"17","title":"Lifehacker","imgBasePath":"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/img\/","jsBasePath":"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/js\/","canonicalHost":"lifehacker.com"};
+		</script>
+
+
+					</head>
+
+	<body id="lifehacker" class="post legacy">
+
+		<div id="header">
+			<div id="auth">
+				<div id="user" class="presence_control cn_profile_panel">
+					<a href="#" class="presence_control cn_profile_link"></a>
+					<div id="userMenu" class="presence_control cn_user_menu box">
+						<div id="userNotificationContainer" class="notifications modfont"></div>
+						<div id="clearNotifications" style="display: none">Clear notifications &times;</div>
+						<ul id="profile_actions">
+							<li><a href="/me" class="presence_control cn_goto_profile">Profile</a></li>
+							<li><a class="presence_control cn_logout_link" href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="login" class="presence_control cn_login_panel">
+					<a class="presence_control cn_togglelogindialog" href="#">Sign in</a>
+				</div>
+			</div>
+
+			<div id="site" class="marked marked-head ui-border">
+				<h2 class="brand">
+					<a href="/" id="frontpage"><span>Lifehacker</span></a>
+				</h2>
+
+				<ul id="switch_view" class="modfont">
+					<li><a id="switch_topstories" title="Switch to top stories" href="http://lifehacker.com">Top Stories</a></li>
+				</ul>
+			</div>
+
+			<div id="rightbar-header" class="modfont marked marked-head ui-border">
+				<div id="rightbar_pin_container">
+					<a href="#" id="rightbar_pin" class="modfont viewSelector cn_eye" title="Change the layout of the page"></a>
+					<div class="ui-dropdown modfont site-bg-color">
+						<ul>
+							<li id="onepane"><a href="#" class="viewSelector cn_traditional"><span>Traditional</span><small>Entire page scrolls</small></a></li>
+							<li id="blog"><a class="viewSelector" href="http://blog.lifehacker.com"><span>Blog view</span><small>Listing of stories by date</small></a></li>
+						</ul>
+					</div>				</div>
+
+				<a href="/search" class="search tool rightBarControl cn_search_open"></a>
+				
+				<a href="#" class="toggle-hd tool rightBarControl cn_hdpreview" title="HD brought to you by IE9"></a>
+
+				<span class="date modfont">Friday, Jun 29, 2012</span>
+
+				<div class="ui-dropdown modfont site-bg-color" id="sidebarmode">
+					<span class="selected">Latest Stories</span><span class="downarrow"></span>
+					<ul>
+						<li id="switch_latest"><a href="#" class="tool home rightBarControl cn_home"><span>Latest Stories</span></a></li>
+						<li id="switch_popular"><a href="#" class="tool popular rightBarControl cn_popular"><span>Most Popular</span></a></li>
+						<li id="switch_commented"><a href="#" class="tool commented rightBarControl cn_commented"><span>Most Discussed</span></a></li>
+					</ul>
+				</div>
+
+				<div id="notifications">
+									<div id="rightbar_notification_container" class="inner">
+					<div id="user_notification" style="display: none;">
+						<div class="cn_user_header notificationControl notifbadge" style="display: none;"></div>
+						<div class="cn_user_list notificationControl"></div>
+					</div>
+					<div id="breaking_notification" style="display: none;"></div>
+					<div id="post_notification" class="notifbadge" style="display: none;">
+						<div class="cn_wrap notificationControl"></div>
+					</div>
+					<div id="post_notification_overlay" style="display: none;"></div>
+					<div style="clear: both;"></div>
+				</div>
+				</div>
+			</div>
+
+			<div class="gawkerwidget spongestatsclient_area" style="display: none;"></div>
+
+			<script type="text/javascript" charset="utf-8">
+				GawkerClientside.pushWidget('spongestatsclient', jQuery('.gawkerwidget.spongestatsclient_area').spongestatsclient(sponge_client).data('spongestatsclient'));
+			</script>
+
+			<div id="fb-root"></div>
+</div>
+
+		<div id="page">
+
+			<div class="post permalink top mainContent">
+				<script type="text/javascript">
+	window.postId = 5922144;
+	window.originalPostId = 5922144;
+	window.google_hints = '';
+
+	window.post = {
+		id: 5922144,
+		originalPostId: 5922144,
+		tags: ["iostip","iphone","ipodtouch","ipad","batterylife","battery","smartphones","ios","locationservices","gps","top","wtfimage"],
+		sponsored: false	};
+</script>
+
+<div class="ad_marquee default"><!-- runScript --><script language="JavaScript" type="text/javascript">
+	window.adRobot.marqueeConfig(5922144, {"marquee_should_run":false});
+</script>
+<div id="marquee-frame" style="display: none;"></div>
+<span style="width: 1px; height: 1px; overflow: hidden; text-indent: -10000em; margin: 0; position: absolute;">
+<!-- widget container -->
+<div id="ad_container_61520300" class="ad_container marquee" style="display: none;">
+	<iframe id="ad_iframe_61520300" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="2" height="1"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			adRobot.queueAdRun(61520300, {"height":1,"width":2,"mode":"iframe","run_ad":false,"variant":"marquee","size":"2x1","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":61520300,"tags":["iostip","iphone","ipodtouch","ipad","batterylife","battery","smartphones","ios","locationservices","gps","top","wtfimage"],"issued":1340928000,"fallback_zone":"smartphones","iframe_attributes":{"id":"ad_iframe_61520300","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":2,"height":1}});
+	</script>
+<!-- widget container -->
+<div id="ad_container_44357676" class="ad_container takeover" style="display: none;">
+	<iframe id="ad_iframe_44357676" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="1" height="2"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			adRobot.queueAdRun(44357676, {"height":2,"width":1,"mode":"iframe","run_ad":false,"variant":"takeover","size":"1x2","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":44357676,"tags":["iostip","iphone","ipodtouch","ipad","batterylife","battery","smartphones","ios","locationservices","gps","top","wtfimage"],"issued":1340928000,"fallback_zone":"smartphones","iframe_attributes":{"id":"ad_iframe_44357676","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":1,"height":2}});
+	</script>
+</span>
+<!-- runScript --><script type="text/javascript">
+	if (GawkerClientside.widgets.marquee === undefined) {
+		GawkerClientside.pushWidget('marquee', jQuery('#marquee-frame').Marquee({}).data('Marquee'));
+	}
+	window.adRobot.runMarquee(5922144);
+</script></div>
+
+<div id="snippet_items_widgets_agegate"></div><script type="text/javascript">Snippets.push("snippet_items_widgets_agegate", "\r\n\t\t\t\t<div id=\"agegate_container\" style=\"display: none;\">\r\n\t\t\t\t\t<div id=\"agegate_IDHERE\" class=\"agegate_container\">\r\n\t\t\t\t\t\t<div class=\"roundbox\">\r\n\t\t\t\t\t\t\t<b class=\"rtop\"><b class=\"rb1\"><\/b><b class=\"rb2\"><\/b><b class=\"rb3\"><\/b><b class=\"rb4\"><\/b><\/b>\r\n\t\t\t\t\t\t\t<div class=\"roundcontent\">\r\n\t\t\t\t\t\t\t\t<form class=\"agegate_control cn_agegate_form\" action=\"#\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"ageconfirm\"><div class=\"exclamation\"><\/div>Please confirm your birth date:<\/div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"fields\">\r\n\t\t\t\t\t\t\t\t\t\t<input class=\"agegate_control cn_month validate valid_minmax-1_12\" type=\"text\" size=\"2\" maxlength=\"2\" name=\"month\" value=\"mm\" \/>\r\n\t\t\t\t\t\t\t\t\t\t<input class=\"agegate_control cn_day validate valid_minmax-1_31\" type=\"text\" size=\"2\" maxlength=\"2\" name=\"day\" value=\"dd\" \/>\r\n\t\t\t\t\t\t\t\t\t\t<input class=\"agegate_control cn_year validate valid_minmax-1900_2012\" type=\"text\" size=\"4\" maxlength=\"4\" name=\"year\" value=\"yyyy\" \/>\r\n\t\t\t\t\t\t\t\t\t\t<br style=\"clear: both;\" \/>\r\n\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t<input type=\"submit\" value=\"Submit\" class=\"agesubmit\" \/>\r\n\t\t\t\t\t\t\t\t\t<div class=\"validationmessage month_validmsg day_validmsg msg_valid_minmax\" style=\"display: none;\">Please enter a valid date<\/div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"validationmessage year_validmsg msg_valid_minmax\" style=\"display: none;\">Please enter your full birth year<\/div>\r\n\t\t\t\t\t\t\t\t<\/form>\r\n\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t<b class=\"rbottom\"><b class=\"rb4\"><\/b><b class=\"rb3\"><\/b><b class=\"rb2\"><\/b><b class=\"rb1\"><\/b><\/b>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/div>\r\n\r\n\t\t\t\t<div id=\"agegate_container_rejected\" style=\"display: none;\">\r\n\t\t\t\t\t<div id=\"agegate_IDHERE\" class=\"agegate_container denied\">\r\n\t\t\t\t\t\t<div class=\"roundbox\">\r\n\t\t\t\t\t\t\t<b class=\"rtop\"><b class=\"rb1\"><\/b><b class=\"rb2\"><\/b><b class=\"rb3\"><\/b><b class=\"rb4\"><\/b><\/b>\r\n\t\t\t\t\t\t\t<div class=\"roundcontent\"><div class=\"ageconfirm\"><div class=\"exclamation\"><\/div>This content is restricted.<\/div><\/div>\r\n\t\t\t\t\t\t\t<b class=\"rbottom\"><b class=\"rb4\"><\/b><b class=\"rb3\"><\/b><b class=\"rb2\"><\/b><b class=\"rb1\"><\/b><\/b>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/div>\r\n\r\n");</script>				<div class="illustration top video" title="Find Out Which App Is Constantly Using Location Services and Killing Your Battery">
+					<div id="topvideo"></div>
+					<script type="text/javascript">VideoHandler.dumpObject( {"type":"video","player":"http:\/\/www.youtube.com\/v\/LR951Iso2Wc&hl=en&fs=1&hd=1&autohide=1","customParams":[],"width":640,"height":360,"ratio":0.615,"flashData":"","embedName":null,"objectId":null,"noEmbed":false,"source":"youtube","wrap":true,"agegate":false}, 'topvideo', false, true );</script>
+				</div>
+
+
+				<div class="content video illustrated">
+
+				<div class="presence_control_external">
+					<div id="snippet_items_widgets_editorcontrols_post"></div><script type="text/javascript">Snippets.push("snippet_items_widgets_editorcontrols_post", "\n<span class=\"editorControlsWidget_external popup_anchor ui-light modfont\">\n\t<a title=\"Edit in GED\" class=\"pm_link edit_link editor_control cn_for_editors cn_edit_link noHrefOverride\" href=\"https:\/\/publish.lifehacker.com\/ged\/5922144\" target=\"_blank\" style=\"display:none;\">Edit<\/a>\n\t<a class=\"pm_link republish_control cn_republish_link postId_5922144 issued_1340928000 pubstatus_PUBLISHED\" href=\"#\" title=\"Copy this whole post to an other site\" style=\"display:none;\">Republish<\/a>\n\t<a class=\"pm_link roundup_control cn_roundup_link postId_5922144\" href=\"#\" title=\"Click to get roundup snippet\" style=\"display:none;\">Roundup<\/a>\n\t<div class=\"popup_menu left editorControlsWidget\" id=\"editorControlsWidget\" style=\"display: none;\">\n\t\t<div class=\"popup_menu_title site-bg-color\">\n\t\t\tAdmin <span class=\"closeButton editor_control cn_toggleadminlinks\">&times;<\/span>\n\t\t<\/div>\n\t\t<span class=\"editor_control cn_for_editors republish_external\" style=\"display: none;\">\n\t\t\t<a class=\"pm_link edit_link editor_control cn_edit_link noHrefOverride\" href=\"https:\/\/publish.lifehacker.com\/ged\/5922144\" target=\"_new\" title=\"edit this post\">Edit<\/a>\n\t\t\t<a class=\"pm_link draft_link editor_control cn_draft_link postId_5922144\" href=\"#\" title=\"Make this post DRAFT\">Set to Draft<\/a>\n\t\t\t<a class=\"pm_link slurp_toggle republish_control cn_edit_link postId_5922144 issued_1340928000 pubstatus_PUBLISHED\" href=\"#\" title=\"Copy this whole post to an other site\" style=\"display: none;\" >Edit syndicated post<\/a>\n\t\t\t<!--a class=\"pm_link republish_control cn_debug_info\" href=\"#\" onclick=\"jQuery('#debug_pane').slideToggle(200); var dh=jQuery(this).html(); jQuery(this).html( dh.indexOf('Display') != -1 ? dh.replace( 'Display', 'Hide' ) : dh.replace( 'Hide', 'Display' ) ); return false;\">Display Debug Info<\/a-->\n\t\t<\/span>\n\t\t<a class=\"pm_link editor_control cn_starinvite_link postId_5922144 limitstar_7 limitnormal_7 epoch_1258524000 timeframe_604800\" href=\"#\" title=\"Invite someone to comment on this post\" style=\"display: none;\">Invite<\/a>\n\n\t\t<div class=\"modal dialog slurp_dialog editor_control cn_slurp_dialog\" style=\"display: none;\">\n\t\t\t<div class=\"inner\">\n\t\t\t\t<h1>Syndicate<\/h1>\n\t\t\t\t<img class=\"siteIcon\" src=\"http:\/\/ganja.gawkerassets.com\/assets\/v10.lifehacker.com\/img\/apple-touch-icon.png\"\/>\n\t\t\t\t<div class=\"text\">\n\t\t\t\t\t<form class=\"slurp_form editor_control cn_slurp_form\" method=\"GET\">\n\t\t\t\t\t\t<p>Syndicate this post<\/p><br \/>\n\t\t\t\t\t\t<div id=\"formelements\">\n\t\t\t\t\t\t\tSite:\n\t\t\t\t\t\t\t<select class=\"site_select editor_control cn_slurp_select\" name=\"siteId\">\n\t\t\t\t\t\t\t\t<option value=\"-1\">select site<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"43\">advertising<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"11\">deadspin<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"7\">gawker<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"4\">gizmodo<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"8\">io9<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"12\">jalopnik<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"39\">jezebel<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"9\">kotaku<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"17\">lifehacker<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"37\">artists<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"42\">gawkershop<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"30\">sploid<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/select><br \/>\n\t\t\t\t\t\t\tMode:\n\t\t\t\t\t\t\t<select name=\"syndicate\" class=\"editor_control cn_slurp_syndicate\">\n\t\t\t\t\t\t\t\t<option value=\"republish\">republish<\/option>\n\t\t\t\t\t\t\t\t<option value=\"promote\">promote<\/option>\n\t\t\t\t\t\t\t\t<option value=\"export\">export<\/option>\n\t\t\t\t\t\t\t<\/select><br \/><br \/>\n\t\t\t\t\t\t\t<input type=\"button\" class=\"slurp_bttn slurp_button editor_control cn_slurp_cancel slurp_cancel\" value=\"Cancel\"\/>\n\t\t\t\t\t\t\t<input type=\"button\" class=\"slurp_bttn slurp_button editor_control cn_slurp_button\" value=\"Submit\" \/>\n\t\t\t\t\t\t\t<div class=\"slurp_indicator editor_control cn_slurp_indicator right\" style=\"display: none;\"><img width=\"16\" height=\"16\" alt=\"sending request\" src=\"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/img\/indicator\/progressIndicator_roller.gif\" \/><\/div>\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"op\" value=\"addsitetag\" \/>\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"postId\" value=\"5922144\" \/>\n\t\t\t\t\t\t\t<div class=\"slurp_message editor_control cn_slurp_message small\"><\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/form>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\n\t<\/div>\n\n<\/span>\n");</script>				</div>
+
+				<div class="alternates modfont">
+										<a href="http://lifehacker.com/ios-tip/" class="taglink">ios tip</a> 										<span class="tag-more">
+																													<a class="taglink alternate" href="http://lifehacker.com/iphone/">iphone</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/ipod-touch/">ipod touch</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/ipad/">ipad</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/battery-life/">battery life</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/battery/">battery</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/smartphones/">smartphones</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/ios/">ios</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/location-services/">location services</a>
+																								<a class="taglink alternate" href="http://lifehacker.com/gps/">gps</a>
+																																			<a class="taglink alternate" href="http://lifehacker.com/wtfimage/">wtfimage</a>
+																</span>
+				</div>
+
+									<div class="post-supp">
+	<div class="post-meta presence_control_external ui-shade ui-light marked ui-border modfont" data-permalink="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery">
+
+		<span class="line">
+											<cite>
+					By <span class="plus-icon">Whitson Gordon</span>															<div class="ui-dropdown modfont" id="author-menu">
+						<ul>
+							<li><a href="/people/Gyroscope352/" rel="author" class="noHrefOverride profile gaqtrack" data-gaqevent="author_links" data-gaqid="byline_view_profile"><img src="http://img.gawkerassets.com/img/17jdah27qlbh9jpg/avt-small.jpg" border="0" width="14" /><span>View Profile</span></a></li>
+							<li><a href="mailto:&#119;&#104;&#105;&#116;&#115;&#111;&#110;&#64;&#108;&#105;&#102;&#101;&#104;&#97;&#99;&#107;&#101;&#114;&#46;&#99;&#111;&#109;" class="email gaqtrack" data-gaqevent="author_links" data-gaqid="byline_email"><span>Email</span></a></li>
+							<li><a href="https://www.facebook.com/WhitsonGordonFanPage" class="facebook gaqtrack" data-gaqevent="author_links" data-gaqid="byline_facebook"><span>Facebook</span></a></li>
+							<li><a href="http://twitter.com/WhitsonGordon" class="twitter gaqtrack" data-gaqevent="author_links" data-gaqid="byline_twitter"><span>Twitter</span></a></li>
+							<li><a href="aim:goim?screename=" class="aim gaqtrack" data-gaqevent="author_links" data-gaqid="byline_aim"><span>AIM</span></a></li>
+							<li><a href="https://plus.google.com/115788203615961124571?rel=author" class="gplus gaqtrack" data-gaqevent="author_links" data-gaqid="byline_google_plus"><span>Google Plus</span></a></li>
+							<li><a href="/author/Gyroscope352.xml" class="rss gaqtrack" data-gaqevent="author_links" data-gaqid="byline_rss" target="_blank"><span>RSS</span></a></li>
+						</ul>
+					</div>
+				</cite>
+				
+			<span class="date">
+				Jun 28, 2012  5:00 PM			</span>
+					</span>
+
+		<span class="data" title=""  alt="">
+			<span class="total_views">&nbsp;</span><img class="icon flame" src="http://ganja.gawkerassets.com/assets/base.v10/img/icons/rightbar.flame.png">
+			<span class="comments">&nbsp;</span><img class="icon comment" src="http://ganja.gawkerassets.com/assets/base.v10/img/icons/rightbar.comment.png">
+		</span>
+
+					<div class="share">
+						<button class="button ui-light share_button">Share</button>
+						<div class="share_menu box">
+							<ul>
+								<li class="share_facebook">
+									<a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flifehacker.com%2F5922144%2Ffind-out-which-app-is-constantly-using-location-services-and-killing-your-battery" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'facebook', 'http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery']);window.open(this.href,'sharefb','toolbar=0,status=0,width=480,height=420');jQuery('.share_menu').hide();return false;"><span>Facebook</span></a>
+								</li>
+								<li class="share_twitter">
+									<a href="http://twitter.com/share?url=http%3A%2F%2Flifehacker.com%2F5922144%2Ffind-out-which-app-is-constantly-using-location-services-and-killing-your-battery&text=Ios+Tip%3A+Find+Out+Which+App+Is+Constantly+Using+Location+Services+and+Killing+Your+Battery+-+%40Lifehacker" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'twitter', 'http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery']);window.open(this.href,'sharetwitter','toolbar=0,status=0,width=480,height=360');jQuery('.share_menu').hide();return false;"><span>Twitter</span></a>
+								</li>
+								<li class="share_linkedin">
+									<a href="http://www.linkedin.com/cws/share?url=http%3A%2F%2Flifehacker.com%2F5922144%2Ffind-out-which-app-is-constantly-using-location-services-and-killing-your-battery" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'linkedin', 'http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery']);window.open(this.href,'sharelinkedin','toolbar=0,status=0,width=600,height=200,top=100');jQuery('.share_menu').hide();return false;"><span>LinkedIn</span></a>
+								</li>
+								<li class="share_tumblr">
+									<a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Flifehacker.com%2F5922144%2Ffind-out-which-app-is-constantly-using-location-services-and-killing-your-battery&name=Ios+Tip%3A+Find+Out+Which+App+Is+Constantly+Using+Location+Services+and+Killing+Your+Battery%28via+%40Lifehacker%29&description=You+can+do+a+lot+to+improve+your+iPhone%27s+battery+life%2C+but+sometimes+you+just+get+a+bad+app+that+will+suck+up+your+battery+all+on+its+own.+Here%27s+one+trick+we%27ve+discovered+for+finding+out+which+app+that+is." target="_blank" title="Share on Tumblr" onClick="_gaq.push(['_trackEvent', 'share', 'tumblr', 'http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery']);window.open(this.href,'sharetumblr','toolbar=0,status=0,width=450,height=430');jQuery('.share_menu').hide();return false;"><span>Tumblr</span></a>
+								</li>
+								<li class="share_instapaper">
+									<a href="http://www.instapaper.com/hello2?url=http%3A%2F%2Flifehacker.com%2F5922144%2Ffind-out-which-app-is-constantly-using-location-services-and-killing-your-battery&amp;title=Ios+Tip%3A+Find+Out+Which+App+Is+Constantly+Using+Location+Services+and+Killing+Your+Battery+-+%40Lifehacker" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'instapaper', 'http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery']);jQuery('.share_menu').hide();"><span>Instapaper</span></a>
+								</li>
+								<li class="pm_tool presence_control_external share_email">
+									<a class="pm_tool mail2control cn_toggle" rel="nofollow" title="Send to friend" href="#" onClick="_gaq.push(['_trackEvent', 'share', 'email', 'http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery']);jQuery('.share_menu').hide();"><span>Email this post</span></a>
+								</li>
+							</ul>
+						</div>
+
+<div id="gplus"><g:plusone size="medium" count="false" href="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery"></g:plusone></div>
+	<div id="socialbuttons">
+		<div class="facebook">
+			<fb:like href="http%3A%2F%2Flifehacker.com%2F5922144%2Ffind-out-which-app-is-constantly-using-location-services-and-killing-your-battery" send="false" layout="button_count" width="126" show_faces="false" font="lucida grande"></fb:like>
+		</div>
+		<div class="twitter">
+			<a href="https://twitter.com/share" class="twitter-share-button"
+				data-url="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery"
+				data-text="Ios Tip: Find Out Which App Is Constantly Using Location Services and Killing Your Battery - @Lifehacker">Tweet</a>
+		</div>
+		<div class="stumbleupon">
+			<su:badge layout="1" location="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery"></su:badge>
+		</div>
+		<div class="linkedin">
+		</div>
+	</div>
+					</div>
+
+		<span class="clear"></span>
+	</div>
+<div class="ad_300x250 inpost"><!-- widget container -->
+<div id="ad_container_80164024" class="ad_container inpost" style="display: none;">
+	<iframe id="ad_iframe_80164024" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="300" height="250"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			adRobot.queueAdRun(80164024, {"mode":"iframe","width":300,"height":250,"refreshable":false,"run_ad":false,"size":"300x250","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":80164024,"variant":"inpost","tags":["iostip","iphone","ipodtouch","ipad","batterylife","battery","smartphones","ios","locationservices","gps","top","wtfimage"],"issued":1340928000,"fallback_zone":"smartphones","iframe_attributes":{"id":"ad_iframe_80164024","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":300,"height":250}});
+	</script></div>	<div id="fb_300x250">
+		<style>
+	#subscribeRect {
+		width: 300px;
+		min-height: 125px;
+		clear: both;
+		float: none;
+		position: relative;
+		margin-bottom: 1em;
+		-webkit-border-bottom-right-radius: 6px;
+		-webkit-border-bottom-left-radius: 6px;
+		-moz-border-radius-bottomright: 6px;
+		-moz-border-radius-bottomleft: 6px;
+		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: 6px;
+		}
+
+	#subscribeRect .top {
+		height: 63px;
+		position: relative;
+		-webkit-border-top-left-radius: 6px;
+		-webkit-border-top-right-radius: 6px;
+		-moz-border-radius-topleft: 6px;
+		-moz-border-radius-topright: 6px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		}
+
+	#subscribeRect .top .logo {
+		margin-top: 1em;
+		}
+
+	#subscribeRect ul.interface {
+		display: block;
+		width: 99px;
+		position: absolute;
+		top: 35px;
+		right: 10px;
+		}
+	#subscribeRect ul.interface li {
+		display: block;
+		float: left;
+		width: 33px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		}
+
+	.ie7 #subscribeRect ul.interface,
+	.ie7 #subscribeRect ul.interface li {
+		display: block;
+		float: left;
+	}
+
+	.ie7 #subscribeRect ul.interface{
+		position: static;
+	}
+
+	#subscribeRect ul.interface li {
+		color: #474956;
+		text-decoration: none;
+		cursor: pointer;
+		padding-top: 24px;
+		opacity: .75;
+		transition: opacity .2s ease-in;
+		-moz-transition: opacity .2s ease-in;
+		-webkit-transition: opacity .2s ease-in;
+		}
+
+		#subscribeRect ul.interface li:hover { opacity: 1; }
+
+		#subscribeRect ul.interface li.newsletter { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-newsletter.png') center top no-repeat; }
+		#subscribeRect ul.interface li.facebook { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-facebook.png') center top no-repeat; }
+		#subscribeRect ul.interface li.googleplus { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-gplus.png') center top no-repeat; }
+		#subscribeRect ul.interface li.twitter { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-twitter.png') center top no-repeat; }
+		#subscribeRect ul.interface li.stumbleupon { display: none; background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-stumbleupon.png') center top no-repeat; float: right; }
+
+	#subscribeRect .carrot {
+		position: absolute;
+		top: 63px;
+		transition: left .25s ease-in;
+		-moz-transition: left .25s ease-in;
+		-webkit-transition: left .25s ease-in;
+		}
+
+	#subscribeRect.select_facebook .carrot { left: 199px; }
+	#subscribeRect.select_facebook .panel.facebook { display: block; opacity: 1; }
+	#subscribeRect.select_facebook .panel.facebook iframe { margin-top: 5px; }
+	#subscribeRect.select_facebook ul.interface li.facebook { opacity: 1; }
+
+	#subscribeRect.select_googleplus .carrot { left: 199px; }
+	#subscribeRect.select_googleplus .panel.googleplus { display: block; opacity: 1; }
+	#subscribeRect.select_googleplus .panel.googleplus iframe { margin-top: 5px; }
+	#subscribeRect.select_googleplus ul.interface li.googleplus { opacity: 1; }
+
+	#subscribeRect.select_newsletter .carrot { left: 265px; }
+	#subscribeRect.select_newsletter .panel.newsletter { display: block; opacity: 1;  }
+	#subscribeRect.select_newsletter ul.interface li.newsletter { opacity: 1; }
+
+	#subscribeRect.select_twitter .carrot { left: 232px; }
+	#subscribeRect.select_twitter .panel.twitter { display: block; opacity: 1; }
+	#subscribeRect.select_twitter .panel.twitter iframe { margin-top: 5px; }
+	#subscribeRect.select_twitter ul.interface li.twitter { opacity: 1; }
+
+	#subscribeRect.select_stumbleupon .carrot { left: 265px; }
+	#subscribeRect.select_stumbleupon .panel.stumbleupon { display: block; opacity: 1; padding-top: 3px; }
+
+	 #subscribeRect .bottom {
+	 	margin: 16px 16px 0 16px;
+	 	font-size: 13px;
+	 	line-height: 19px;
+	 }
+
+	/* le havre font size fix */
+	#gawker #subscribeRect .bottom,
+	#jezebel #subscribeRect .bottom,
+	#deadspin #subscribeRect .bottom{ font-size: 15px; line-height: 20px; }
+
+
+		#subscribeRect .bottom .panel {
+			-moz-transition: opacity .25s ease;
+			display: none;
+			opacity: 0;
+			}
+
+	.html5 #subscribeRect .panel.twitter .label { display: block; }
+
+	.html5 #subscribeRect .panel.newsletter .signup {
+		display: box;
+		display: -moz-box;
+		display: -webkit-box;
+		box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-webkit-box-orient: horizontal;
+		width: 270px;
+		margin: 3px 0px;
+	}
+
+	.html5 #subscribeRect .panel.newsletter .newsletter_signup input#newsletter_email {
+		box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-box-flex: 1;
+		width: 180px;
+		height: 22px;
+		color: #999;
+	}
+
+	#subscribeRect.select_newsletter .panel.newsletter .button { margin-left: .5em;margin-top:-3px; }
+
+	#subscribeRect label { padding:0 0 3px 0; display: block; }
+
+	/** site specific **/
+
+	#subscribeRect { background-color: #EBEEDD; color: #474956; }
+	#subscribeRect .top { background-color: #CAD2A7; }
+
+	#gawker #subscribeRect { background-color: #F2F4F7; }
+	#gawker #subscribeRect .top { background-color: #8C93A9;}
+
+	#gizmodo #subscribeRect { background-color: #F2F4F8; }
+	#gizmodo #subscribeRect .top { background-color: #3697B3;}
+	#gizmodo #subscribeRect ul.interface li { color: #F2F4F8; }
+
+	#deadspin #subscribeRect { background-color: #F0F0F0; }
+	#deadspin #subscribeRect .top { background-color: #2CD5C7;}
+
+	#jezebel #subscribeRect { background-color: #E2F2F0; }
+	#jezebel #subscribeRect .top { background-color: #ABBABA;}
+
+	#io9 #subscribeRect { background-color: #F2F2F2; }
+	#io9 #subscribeRect .top { background-color: #AF8F9D;}
+
+	#kotaku #subscribeRect { background-color: #FAFCFF; }
+	#kotaku #subscribeRect .top { background-color: #C0CDDB;}
+
+	#jalopnik #subscribeRect { background-color: #DBE0E4; }
+	#jalopnik #subscribeRect .top { background-color: #417FB9;}
+	#jalopnik #subscribeRect ul.interface li { color: #DBE0E4; }
+
+	.newsletter_signup .validationmessage, .newsletter_signup .cn_message {
+		background-color: #000;
+		background-color: rgba(0, 0, 0, 0.75);
+		border-radius: 5px 5px 5px 5px;
+		color: #FFFFFF;
+		padding: 5px;
+		position: absolute;
+		text-align: center;
+		width: 176px;
+		top: 110px;
+	}
+
+	.newsletter_signup .validationmessage, .newsletter_signup .cn_message:empty  { display: none; }
+
+	#subscribeRect .top h4{
+		padding: 0;
+		margin: 0;
+		position: relative;
+		top: 10px;
+		left: 10px;
+		text-transform: uppercase;
+		font-size: 18px;
+		color: #FFF;
+		opacity: 0.8;
+	}
+
+	#subscribeRect .top h4.followsite{ font-weight: bold; opacity: 1; }
+	#subscribeRect .cn_message{ display:none; }
+
+	/* stumbleupon link */
+	.panel.stumbleupon a {
+		display: block;
+		width: 179px;
+		height: 22px;
+		background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/badge-stumbleupon.png?11042012') left top no-repeat;
+		margin: 0 auto;
+	}
+
+	.panel.stumbleupon a span {
+		display: none;
+	}
+
+ </style>
+<div id="subscribeRect" class="select_facebook">
+	<div class="top">
+		<h4 class="modfont">Get our top stories</h4>
+		<h4 class="followsite modfont">follow lifehacker</h4>
+		<ul class="interface modfont">
+						<li class="googleplus" title="Follow Lifehacker on Google+" style="display:none"></li>
+						<li class="facebook" title="Like Lifehacker on Facebook"></li>
+			<li class="twitter" title="Follow Lifehacker on Twitter"></li>
+			<li class="newsletter" title="Subscribe to Lifehacker Daily"></li>
+			<li class="stumbleupon" title="Visit Lifehacker channel on Stumbleupon"></li>
+		</ul>
+		<img src="http://ganja.gawkerassets.com/assets/base/img/subscribe/lifehacker.com/carrot.png" class="carrot"/>
+	</div>
+	<div class="bottom modfont">
+		<div class="panel googleplus">
+			<g:plus href="https://plus.google.com/107345380056943591322" width="268" height="69" theme="light"></g:plus>
+		</div>
+		<div class="panel stumbleupon">
+			<a href="http://www.stumbleupon.com/channel/lifehacker" target="_blank"><span>Stumbleupon</span></a>
+		</div>
+		<div class="panel facebook">
+			<iframe src="http://www.facebook.com/plugins/like.php?app_id=241120799258524&amp;href=https%3A%2F%2Fwww.facebook.com%2Flifehacker&amp;send=false&amp;layout=standard&amp;width=270&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=45" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:275px; height:45px;" allowTransparency="true"></iframe>
+		</div>
+		<div class="panel twitter">
+			<a href="http://twitter.com/Lifehacker" class="twitter-follow-button">Follow @Lifehacker</a>
+		</div>
+		<div class="panel newsletter">
+				<div class="newsletter_signup" id="newsletter_signup_sidebar">
+					<form class="newsletter_control cn_form">
+						<input type="hidden" name="op" value="newsletter_signup" />
+
+						<div class="validationmessage email_validmsg msg_valid_nonempty">Please enter your email address.</div>
+						<div class="validationmessage email_validmsg msg_valid_email">Please enter a valid email address.</div>
+						<div class="cn_message true">Please check your inbox for a confirmation email.</div>
+						<div class="cn_message false">An error occured, please try again later.</div>
+						<div class="newsletter_control cn_message"></div>
+
+						<div class="signup">
+							<input type="text" id="newsletter_email" name="email" maxlength="255" class="validate valid_nonempty valid_email newsletter_control cn_newsletter_signup" onfocus="if ( this.value == 'Get the top story in your inbox' ) { this.value=''; this.style.color = 'black';}" onblur="if ( this.value == '') { this.value = 'Get the top story in your inbox'; this.style.color = '#999'; }" value="Get the top story in your inbox" />
+							<input type="hidden" id="SIGNUP" name="SIGNUP" value="sidebar">
+							<input type="submit" class="button" value="Subscribe" />
+							<img class="newsletter_control cn_indicator" style="border: none; display: none;position:absolute;right:2px;margin-top:-22px" width="16" height="16" alt="sending request" src="http://ganja.gawkerassets.com/assets/base.v10/img/indicator/progressIndicator_roller.gif" />
+						</div>
+					</form>
+				</div>
+				<!-- runScript -->
+				<script type="text/javascript" charset="utf-8">
+					GawkerClientside.pushWidget( 'newsletter_signup', jQuery('#newsletter_signup_sidebar').SimpleFormWidget( settings.widgets.simpleform.byselector['.newsletter_signup'].options ).data('SimpleFormWidget') );
+					jQuery( function() {
+						var subscriber = jQuery('#subscribeRect');
+						// show plus instead of fb for g+ referrers
+						if(SocialButtons.referrerDomain === 'plus.url.google.com'/* || location.hash === '#googleplus'*/) {
+							subscriber.find('.interface li.googleplus').show();
+							subscriber.find('.interface li.facebook').hide();
+							subscriber
+								.addClass('select_googleplus')
+								.removeClass('select_facebook');
+							SocialButtons.googleplusScript().then(function() {
+								window.gapi.plus.go(subscriber.find('.panel.googleplus')[0]);
+							});
+						} else if ( SocialButtons.referrerDomain === 'www.stumbleupon.com' && subscriber.find('.panel.stumbleupon').length ) {
+							subscriber.find('.interface li').hide();
+							subscriber.find('.interface li.stumbleupon').show();
+							subscriber
+								.addClass('select_stumbleupon')
+								.removeClass('select_facebook');
+						}
+						// switcher
+						jQuery('.interface li').click(function() {
+							//google analytics event tracker
+							_gaq.push(['_trackEvent', 'edit_marketing', this.className ]);
+							subscriber
+								.removeClass()
+								.addClass('select_'+this.className);
+							// lazy-load twitter
+							if(this.className === 'twitter') {
+								SocialButtons.twitterScript();
+							}
+						});
+						jQuery('.panel.newsletter .signup .button').click(function(){
+							_gaq.push(['_trackEvent', 'edit_marketing', 'newsletter_subscribe']);
+						});
+					});
+				</script>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+addAuthorDropdownClick();
+</script>
+				
+
+					<h1>Find Out Which App Is Constantly Using Location Services and Killing Your Battery</h1>
+					<div class="post-body">
+																									<p><img src="http://img.gawkerassets.com/img/17r7qae99vjwvjpg/medium.jpg" width="300" class="image_-1 v10_medium" style="display: none;"  alt="Find Out Which App Is Constantly Using Location Services and Killing Your Battery"  title="Find Out Which App Is Constantly Using Location Services and Killing Your Battery" /><!-- videoId: LR951Iso2Wc --><img src="http://img.gawkerassets.com/img/17r7m8fy1fo1njpg/medium.jpg" width="300" class="image_-1 embeddedVideoThumbnail v10_medium" style="display: none;"  alt="Find Out Which App Is Constantly Using Location Services and Killing Your Battery"  title="Find Out Which App Is Constantly Using Location Services and Killing Your Battery" /><!-- /videoId: LR951Iso2Wc --> You can do a lot to <a href="http://lifehacker.com/5859413/how-to-improve-your-iphones-battery-life">improve your iPhone's battery life</a>, but sometimes you just get a bad app that will suck up your battery all on its own. Here's one trick we've discovered for finding out which app that is. <!-- %JUMP:More &raquo;% --></p> <p>Tell me if this has happened to you before: you're using your iPhone, and everything is fine until you realize that the location services icon in your menu bar is on even when you aren't using something like Maps. There are a few apps out there that just keep location services on 24/7, even when the app isn't open.</p> <p>To figure out which one it is, just open up your Settings app, go to Location Services, and search for a purple arrow in the list. The app with the purple GPS arrow indicates which app is currently using your location services, and if it's something you didn't turn on yourself (like navigation, for example), that app is probably the one sucking up your battery. You can either turn location services off or see if there's setting within the app that fixes the problem.</p> <p>This may seem obvious to some, but it's happened to a bunch of us here at Lifehacker, and it took us a while to figure out how to solve the problem. If you're noticing that your battery isn't lasting very long, this is a good trick to try. Of course, you could also use something like <a href="http://lifehacker.com/5918671/carat-tells-your-which-apps-suck-up-your-battery-power">previously mentioned</a> <a href="http://itunes.apple.com/us/app/carat/id504771500?mt=8">Carat</a> to find the offending app, if this doesn't help.</p> <p><i style="font-size:80%">Music by <a href="http://teamyacht.com/">YACHT</a></i>.</p>
+
+						
+					</div>
+				<div id="ads">
+					<div class="ad_perma-panorama default"><div class="ad panorama">
+<!-- widget container -->
+<div id="ad_container_27244722" class="ad_container default" style="display: none;">
+	<iframe id="ad_iframe_27244722" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="640" height="360"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_27244722').AdUnit({"mode":"iframe","width":640,"height":360,"size":"640x360","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":27244722,"variant":"default","tags":["iostip","iphone","ipodtouch","ipad","batterylife","battery","smartphones","ios","locationservices","gps","top","wtfimage"],"issued":1340928000,"fallback_zone":"smartphones","iframe_attributes":{"id":"ad_iframe_27244722","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":640,"height":360}});
+	</script>
+</div></div>									</div>
+
+				<div class="authoremail">
+				<div class="author-contact ui-border-light">
+					<span class="label">Contact Whitson Gordon:</span>
+					<ul class="items modfont">
+						<li><a href="mailto:whitson@lifehacker.com" class="email gaqtrack" data-gaqevent="author_links" data-gaqid="contact_strip_email"><span>Email the author</span></a></li>
+						<li><a class="comment scrolltonewcomment gaqtrack" data-gaqevent="author_links" data-gaqid="contact_strip_comment"><span>Comment</span></a></li>
+						<li><a href="https://www.facebook.com/WhitsonGordonFanPage" class="facebook gaqtrack" data-gaqevent="author_links" data-gaqid="contact_strip_facebook" target="_blank"><span>Facebook</span></a></li>
+						<li><a href="http://twitter.com/WhitsonGordon" class="twitter gaqtrack" data-gaqevent="author_links" data-gaqid="contact_strip_twitter" target="_blank"><span>Twitter</span></a></li>
+					</ul>
+				</div>
+			</div>
+	
+<div class="ad_300x250 panorama"><!-- widget container -->
+<div id="ad_container_86398152" class="ad_container panorama" style="display: none;">
+	<iframe id="ad_iframe_86398152" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="300" height="250"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			adRobot.queueAdRun(86398152, {"mode":"iframe","width":300,"height":250,"refreshable":false,"run_ad":false,"size":"300x250","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":86398152,"variant":"panorama","tags":["iostip","iphone","ipodtouch","ipad","batterylife","battery","smartphones","ios","locationservices","gps","top","wtfimage"],"issued":1340928000,"fallback_zone":"smartphones","iframe_attributes":{"id":"ad_iframe_86398152","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":300,"height":250}});
+	</script></div><span class="related-heading modfont ui-light">Related Stories</span>
+<ul class="related">
+	<li>
+		<h3>
+			<a href="http://lifehacker.com/5796510/how-to-increase-the-default-text-size-on-your-idevice" class="gaqtrack" data-gaqevent="homepage_click" data-gaqid="1_related_1"				>How to Increase the Default Text Size on Your iDevice</a>
+						</h3>
+	</li>
+	<li>
+		<h3>
+			<a href="http://lifehacker.com/5786368/disable-ping-to-save-battery-on-your-ios-device" class="gaqtrack" data-gaqevent="homepage_click" data-gaqid="1_related_2"				>Disable Ping to Save Battery on Your iOS Device</a>
+						</h3>
+	</li>
+	<li>
+		<h3>
+			<a href="http://lifehacker.com/5782171/launch-webapps-from-mobile-safari-instead-of-your-homescreen-for-better-performance" class="gaqtrack" data-gaqevent="homepage_click" data-gaqid="1_related_3"				>Launch Webapps from Mobile Safari Instead of Your Homescreen for Better Performance</a>
+						</h3>
+	</li>
+</ul>
+				</div>
+				<!-- /content -->
+<script type="text/javascript">
+jQuery( function() {
+	var fade;
+	if( (pageType == 'post' || pageType == 'frontpage' || pageType == 'tagpage') && jQuery('.alternates').length > 0 ){
+		jQuery('.alternates .taglink').mouseenter(function(){jQuery('.tag-more').fadeIn(100)});
+		jQuery('.alternates .topspan').mouseenter(function(){jQuery('.tag-more').fadeIn(100)});
+		jQuery('.alternates').hover(function(){clearTimeout(fade);}, function(){fade = setTimeout("jQuery('.tag-more').fadeOut(100)",2000)});
+	}
+}
+);
+</script>
+
+	<a name="comments"></a>
+<div id="comments">
+
+					<!--[if IE 6]>
+					<span class="small ie6only">Your version of Internet Explorer is not supported. Please upgrade to the most recent version in order to view comments.<br /><br /></span>
+					<![endif]-->
+<div id="snippet_thread_items_comment_admin_external"></div><script type="text/javascript">Snippets.push("snippet_thread_items_comment_admin_external", "<div class=\"tac cn_adminbox_placetobe\" style=\"display: none;\">\n\t<div class=\"modalpopup modfont admin_links tac cn_adminbox\" style=\"display: none;\">\n\t\t<div class=\"caption\">Comment Admin<\/div>\n\t\t<span class=\"closeButton tac cn_adminlinks\">&times;<\/span>\n\n\t\t<a class=\"tac cn_openwarndialog\" title=\"Move comment\">Move comment<\/a>\n\t\t\t\t<a class=\"tac cn_adminedit\" title=\"Edit this comment\">Edit comment<\/a>\n\t\t\t\t<a class=\"tac cn_admindemote\" title=\"Demote this comment\">Demote comment<\/a>\n\t\t<img class=\"commenticon icon_progress tac cn_s_ind\" style=\"display: none;\" width=\"12\" height=\"12\" alt=\"sending request\" src=\"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/img\/indicator\/progressIndicator_roller.gif\" \/>\n\t<\/div>\n<\/div>\n\n<div class=\"tac cn_warndialog_placetobe\">\n\t<div class=\"popup_menu modalpopup user_warn tac cn_warndialog\" style=\"display: none;\">\n\t\t<div class=\"caption\">Move thread<\/div>\n\t\t<span class=\"closeButton tac cn_closewarndialog\">&times;<\/span>\n\t\t<div class=\"uw_block\">\n\t\t\t<h5>User action<\/h5>\n\t\t\t<select name=\"userstate\" class=\"tac cn_uw_state\">\n\t\t\t\t<option value=\"\">none<\/option>\n\t\t\t\t<option value=\"warn\">Warn<\/option>\n\t\t\t\t<option value=\"suspend\">Suspend for 1 week<\/option>\n\t\t\t\t<option value=\"ban\">Ban Forever<\/option>\n\t\t\t<\/select>\n\t\t<\/div>\n\t\t<div class=\"uw_block\">\n\t\t\t<h5>Thread action<\/h5>\n\t\t\t<select name=\"moveto\" class=\"tac cn_uw_moveto\">\n\t\t\t\t<option value=\"\">don't move<\/option>\n\t\t\t\t\t\t\t\t<option value=\"dupe\">#dupe<\/option>\n\t\t\t\t\t\t\t\t<option value=\"redesign\">#redesign<\/option>\n\t\t\t\t\t\t\t\t<option value=\"corrections\">#corrections<\/option>\n\t\t\t\t\t\t\t\t<option value=\"offtopic\">#offtopic<\/option>\n\t\t\t\t\t\t\t\t<option value=\"trolled\">#trolled<\/option>\n\t\t\t\t\t\t\t\t<option value=\"offensive\">#offensive<\/option>\n\t\t\t\t\t\t\t\t<option value=\"spam\">#spam<\/option>\n\t\t\t\t\t\t\t\t<option value=\"tldr\">#tldr<\/option>\n\t\t\t\t\t\t\t\t<option value=\"techhelp\">#techhelp<\/option>\n\t\t\t\t\t\t\t\t<option value=\"other\">other...<\/option>\n\t\t\t<\/select>\n\t\t\t<input type=\"text\" name=\"moveto_other\" class=\"tac cn_uw_moveto_other\" value=\"#\" style=\"display: none;\" \/>\n\t\t<\/div>\n\t\t<div class=\"buttons\">\n\t\t\t<button href=\"#\" class=\"default tac cn_submituserwarn button\">Submit<\/button>&nbsp;&nbsp;\n\t\t\t<button href=\"#\" class=\"tac cn_closewarndialog button\">Cancel<\/button>\n\t\t<\/div>\n\t\t<br \/>\n\t\t<img src=\"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/img\/indicator\/progressIndicator_roller.gif\" class=\"uw_progress tac cn_uw_progress\" style=\"display: none;\"\/>\n\t\t<div class=\"uw_message tac cn_uw_message\"><\/div>\n\t<\/div>\n<\/div>");</script>
+					<div id="thread_navigation" class="marked-head tc cn_thread_firstpage modfont ui-border">
+						<span id="thread_label">Discussions</span>
+						<ul>
+							<li class="spinner tc cn_spinner"></li>
+							<li><a id="thread_featured" href="#" class="tc cn_showfeatured">Featured</a></li>
+							<li><a id="thread_all" href="#" class="tc cn_showall selected">All</a></li>
+														<li><a id="thread_new" class="tc cn_newdiscussion" href="#">Start a New Discussion</a></li>
+													</ul>
+					</div>
+
+					<div class="input_box_place"></div>
+
+					<span id="comment_box"></span>
+					
+					
+					<div id="thread" class="tc cn_threadlist comment_list_placeholder"></div>
+
+					<div id="comment_toolbar">
+						<a href="#" class="tc cn_nextpage button">Show earlier discussions</a>
+						<a href="#" class="tc cn_featuredthreads button" style="display: none;">Show promoted discussions only</a>
+					</div>
+
+					<noscript><div class="noscriptbar">In order to view comments on lifehacker.com you need to enable JavaScript.<br /> If you are using Firefox and NoScript addon, please mark lifehacker.com as trusted.</div></noscript>
+
+</div><div id="sitetags">
+			<div class="site site-lifehacker">
+				<a class="marked-head lifehacker-head lifehacker-border heading nocapture" href="http://lifehacker.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/lifehacker.png"/></a>
+				<a href="http://lifehacker.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r7qae99vjwvjpg/micro.jpg" title="Find Out Which App Is Constantly Using Location Services and Killing Your Battery" class="editorial"></a>
+			</div>
+			<div class="site site-gawker">
+				<a class="marked-head gawker-head gawker-border heading nocapture" href="http://gawker.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/gawker.png"/></a>
+				<a href="http://gawker.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r76nlelwdo4jpg/micro.jpg" title="Remix Everything: BuzzFeed and the Plagiarism Problem" class="editorial"></a>
+			</div>
+			<div class="site site-deadspin">
+				<a class="marked-head deadspin-head deadspin-border heading nocapture" href="http://deadspin.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/deadspin.png"/></a>
+				<a href="http://deadspin.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r72ayc8cds5jpg/micro.jpg" title="How A Career Ends: Danny Manning, No. 1 NBA Draft Pick In 1988, Savored His Garbage Time In 2003" class="editorial"></a>
+			</div>
+			<div class="site site-kotaku last">
+				<a class="marked-head kotaku-head kotaku-border heading nocapture" href="http://kotaku.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/kotaku.png"/></a>
+				<a href="http://kotaku.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r92945w700zjpg/micro.jpg" title="How Japan Can Churn Out Game Machines for the Next...Two Hundred Years" class="editorial"></a>
+			</div>
+			<div class="site site-jezebel">
+				<a class="marked-head jezebel-head jezebel-border heading nocapture" href="http://jezebel.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/jezebel.png"/></a>
+				<a href="http://jezebel.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r8fxayn7hhxjpg/micro.jpg" title="June 28, 2012" class="editorial"></a>
+			</div>
+			<div class="site site-io9">
+				<a class="marked-head io9-head io9-border heading nocapture" href="http://io9.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/io9.png"/></a>
+				<a href="http://io9.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r8h99eqgah6jpg/micro.jpg" title="Picture of the Day: June 28, 2012" class="editorial"></a>
+			</div>
+			<div class="site site-jalopnik">
+				<a class="marked-head jalopnik-head jalopnik-border heading nocapture" href="http://jalopnik.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/jalopnik.png"/></a>
+				<a href="http://jalopnik.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r77ys8e5dwejpg/micro.jpg" title="Ford Focus ST: The Jalopnik Review" class="editorial"></a>
+			</div>
+			<div class="site site-gizmodo last">
+				<a class="marked-head gizmodo-head gizmodo-border heading nocapture" href="http://gizmodo.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/gizmodo.png"/></a>
+				<a href="http://gizmodo.com" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/17r8903d0z6p6jpg/micro.jpg" title="Scientists Create System That Lets You Type With Your Brain" class="editorial"></a>
+			</div>
+</div>			</div>
+			<script type="text/javascript">
+				var post_data = {
+					img_data: {"data":[{"original":{"url":"http:\/\/img.gawkerassets.com\/img\/17r7qae99vjwvjpg\/original.jpg","width":640,"height":360},"ooriginal":{"url":"http:\/\/img.gawkerassets.com\/post\/17\/2012\/06\/1700-i-drink-your-battery-whitson.jpg","width":640,"height":360},"medium":{"url":"http:\/\/img.gawkerassets.com\/img\/17r7qae99vjwvjpg\/medium.jpg","width":300,"height":169},"xlarge":{"url":"http:\/\/img.gawkerassets.com\/img\/17r7qae99vjwvjpg\/xlarge.jpg","width":640,"height":360}},{"original":{"url":"http:\/\/img.gawkerassets.com\/img\/17r7m8fy1fo1njpg\/original.jpg","width":480,"height":360},"ooriginal":{"url":"http:\/\/i.ytimg.com\/vi\/LR951Iso2Wc\/0.jpg","width":480,"height":360},"medium":{"url":"http:\/\/img.gawkerassets.com\/img\/17r7m8fy1fo1njpg\/medium.jpg","width":300,"height":225}}],"lookup":{"\/img\/17r7qae99vjwvjpg\/original.jpg":{"transform":"original","pos":0},"\/post\/17\/2012\/06\/1700-i-drink-your-battery-whitson.jpg":{"transform":"ooriginal","pos":0},"\/img\/17r7qae99vjwvjpg\/medium.jpg":{"transform":"medium","pos":0},"\/img\/17r7qae99vjwvjpg\/xlarge.jpg":{"transform":"xlarge","pos":0},"\/img\/17r7m8fy1fo1njpg\/original.jpg":{"transform":"original","pos":1},"\/vi\/LR951Iso2Wc\/0.jpg":{"transform":"ooriginal","pos":1},"\/img\/17r7m8fy1fo1njpg\/medium.jpg":{"transform":"medium","pos":1}}}				};
+				GawkerClientside.pushWidget('post', jQuery('div.post').PostWidget(post_data).data('PostWidget'));
+			</script>
+
+			<div id="rightbar">
+
+
+
+				<div id="tomorrowsnews"><span class="site-forecolor modfont">Tips and Downloads For<br />Getting Things Done</span></div>
+				<div class="ad_300x250 rightbar"><!-- widget container -->
+<div id="ad_container_59650158" class="ad_container rightbar" style="display: none;">
+	<iframe id="ad_iframe_59650158" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="300" height="250"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_59650158').AdUnit({"mode":"iframe","width":300,"height":250,"refreshable":false,"size":"300x250","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":59650158,"variant":"rightbar","tags":["iostip","iphone","ipodtouch","ipad","batterylife","battery","smartphones","ios","locationservices","gps","top","wtfimage"],"issued":1340928000,"fallback_zone":"smartphones","iframe_attributes":{"id":"ad_iframe_59650158","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":300,"height":250}});
+	</script></div>
+				<a href="" id="load_previous" class="stories modfont">Newer Stories…</a>
+
+				<ul id="post_list">
+				<li id="rbpost_5922144" class="postid_5922144 issued_1340928000 video latestpost current ui-border ui-shade">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink autoplay" href="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r7qae99vjwvjpg/xsmall.jpg" width="80" height="45" alt="" />
+																	<img src="http://ganja.gawkerassets.com/assets/base.v10/img/ui/icon-video.png" class="icon video">
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_46620095" class="ad_container default" style="display: none;">
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_46620095').AdUnit({"forced_zone":"smartphones","size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"mode":"div","hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":46620095,"variant":"default","fallback_zone":"smartphones","iframe_attributes":{"id":"ad_iframe_46620095","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":null,"height":null}});
+	</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/ios-tip/" class="tag ">
+										<span class="taglink">ios tip</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">5:00 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline autoplay" href="http://lifehacker.com/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery">
+							<span class="headline-txt">Find Out Which App Is Constantly Using Location Services and Killing Your Battery<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922178" class="postid_5922178 issued_1340926200 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922178/answer-do-you-have-x+ray-vision">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r7fp9gc4gigjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_99192630" class="ad_container default" style="display: none;">
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_99192630').AdUnit({"forced_zone":"google, googles, googled","size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"mode":"div","hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":99192630,"variant":"default","fallback_zone":"google, googles, googled","iframe_attributes":{"id":"ad_iframe_99192630","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":null,"height":null}});
+	</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/search-research/" class="tag ">
+										<span class="taglink">Search Research</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">4:30 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922178/answer-do-you-have-x+ray-vision">
+							<span class="headline-txt">Answer: Do You Have X-Ray Vision?<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922192" class="postid_5922192 issued_1340924400 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922192/remains-of-the-day-google-play-gets-updated-for-google-tv">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r7m3ef0yteajpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/for-what-it.s-worth/" class="tag ">
+										<span class="taglink">For What It's Worth</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">4:00 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922192/remains-of-the-day-google-play-gets-updated-for-google-tv">
+							<span class="headline-txt">Remains of the Day: Google Play Gets Updated for Google TV<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922200" class="postid_5922200 issued_1340922600 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922200/the-shedrain-windjammer-keeps-you-dry-in-the-rain-fits-anywhere">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r7lumq3xh7rjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/stuff-we-like/" class="tag ">
+										<span class="taglink">stuff we like</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">3:30 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922200/the-shedrain-windjammer-keeps-you-dry-in-the-rain-fits-anywhere">
+							<span class="headline-txt">The ShedRain WindJammer Keeps You Dry in the Rain, Shrinks Down to Fit Anywhere<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922181" class="postid_5922181 issued_1340920800 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922181/best-android-keyboard">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r7fqor1d9k5jpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_66796044" class="ad_container default" style="display: none;">
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_66796044').AdUnit({"forced_zone":"android","size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"mode":"div","hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":66796044,"variant":"default","fallback_zone":"android","iframe_attributes":{"id":"ad_iframe_66796044","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":null,"height":null}});
+	</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/hive-five-call-for-contenders/" class="tag ">
+										<span class="taglink">hive five call for contenders</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">3:00 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922181/best-android-keyboard">
+							<span class="headline-txt">Best Android Keyboard?<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922145" class="postid_5922145 issued_1340919000 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922145/cheddar-is-a-simple-tag+able-markdown+capable-to+do-app-for-your-iphone-and-the-web">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r786ggj6z7jjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/iphone-downloads/" class="tag ">
+										<span class="taglink">iphone downloads</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">2:30 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922145/cheddar-is-a-simple-tag+able-markdown+capable-to+do-app-for-your-iphone-and-the-web">
+							<span class="headline-txt">Cheddar Is a Simple, Tag-able, Markdown-Capable To-Do App for Your iPhone and the Web<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922070" class="postid_5922070 issued_1340917200 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922070/staring-at-screws-how-i-find-ideas-in-trivial-details">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r6pm4prsr71jpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/ideas/" class="tag ">
+										<span class="taglink">ideas</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">2:00 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922070/staring-at-screws-how-i-find-ideas-in-trivial-details">
+							<span class="headline-txt">Staring at Screws: How I Find Ideas in Trivial Details<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922087" class="postid_5922087 issued_1340915893 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922087/google-unveils-chrome-for-iphone-and-ipad">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r7bboue2kczjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_85571257" class="ad_container default" style="display: none;">
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_85571257').AdUnit({"forced_zone":"google, googles, googled","size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"mode":"div","hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":85571257,"variant":"default","fallback_zone":"google, googles, googled","iframe_attributes":{"id":"ad_iframe_85571257","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":null,"height":null}});
+	</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/google-chrome/" class="tag ">
+										<span class="taglink">Google Chrome</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">1:38 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922087/google-unveils-chrome-for-iphone-and-ipad">
+							<span class="headline-txt">Google Unveils Chrome for iPhone and iPad, Available Later Today [Updated: Available Now]<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922124" class="postid_5922124 issued_1340913600 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922124/use-vlc-to-play-videos-inside-an-rar-file">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r75oaqpgiw7jpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/videos/" class="tag ">
+										<span class="taglink">videos</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">1:00 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922124/use-vlc-to-play-videos-inside-an-rar-file">
+							<span class="headline-txt">Use VLC to Play Videos Inside an RAR File<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922127" class="postid_5922127 issued_1340911800 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922127/use-binder-clips-to-neatly-wrap-up-cables-or-headphones">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r75n1czz6zsjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/clever-uses/" class="tag ">
+										<span class="taglink">clever uses</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">12:30 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922127/use-binder-clips-to-neatly-wrap-up-cables-or-headphones">
+							<span class="headline-txt">Use Binder Clips to Neatly Wrap Up Cables or Headphones<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922071" class="postid_5922071 issued_1340910000 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922071/a-calorie-is-not-just-a-calorie-study-shows">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r6pxn29p1yejpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/health/" class="tag ">
+										<span class="taglink">health</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">12:00 PM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922071/a-calorie-is-not-just-a-calorie-study-shows">
+							<span class="headline-txt">A Calorie Is Not Just a Calorie, Study Shows<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922054" class="postid_5922054 issued_1340906400 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922054/before-jumping-ship-to-better-bank-see-if-you-can-negotiate-with-your-current-one">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r6m7ezhjm99jpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_38743341" class="ad_container default" style="display: none;">
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_38743341').AdUnit({"forced_zone":"personalfinance","size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"mode":"div","hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":38743341,"variant":"default","fallback_zone":"personalfinance","iframe_attributes":{"id":"ad_iframe_38743341","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":null,"height":null}});
+	</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/banks/" class="tag ">
+										<span class="taglink">banks</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">11:00 AM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922054/before-jumping-ship-to-better-bank-see-if-you-can-negotiate-with-your-current-one">
+							<span class="headline-txt">Before Jumping Ship to &#8220;Better&#8221; Bank, See If You Can Negotiate With Your Current One<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922091" class="postid_5922091 issued_1340905200 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922091/google-launches-google-drive-for-ios-and-chrome-os-offline-editing-for-google-docs">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r6uhuepdvjtpng/xsmall.png" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_89806363" class="ad_container default" style="display: none;">
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+			jQuery('#ad_container_89806363').AdUnit({"forced_zone":"google, googles, googled","size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"mode":"div","hide":true,"run_ad":true,"site":"gm.lifehacker","site_id":"17","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":89806363,"variant":"default","fallback_zone":"google, googles, googled","iframe_attributes":{"id":"ad_iframe_89806363","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":null,"height":null}});
+	</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/google-docs/" class="tag ">
+										<span class="taglink">google docs</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">10:40 AM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922091/google-launches-google-drive-for-ios-and-chrome-os-offline-editing-for-google-docs">
+							<span class="headline-txt">Google Launches Offline Editing for Google Docs, Google Drive Apps for iOS and Chrome OS<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5921975" class="postid_5921975 issued_1340904600 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5921975/use-a-coffee-filter-to-save-coffee-grounds-before-they-head-down-the-drain">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r619dcgdwaojpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/cleaning/" class="tag ">
+										<span class="taglink">cleaning</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">10:30 AM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5921975/use-a-coffee-filter-to-save-coffee-grounds-before-they-head-down-the-drain">
+							<span class="headline-txt">Use a Coffee Filter to Save Coffee Grounds Before They Head Down the Drain<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<li id="rbpost_5922047" class="postid_5922047 issued_1340902800 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://lifehacker.com/5922047/how-to-survive-without-a-dvd-drive-in-your-laptop">
+								<img class="thumb" src="http://img.gawkerassets.com/img/17r6k6308yfgyjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"></div>						</div>
+
+						<div class="text">
+
+									<a href="http://lifehacker.com/emailable-tech-support/" class="tag ">
+										<span class="taglink">Emailable Tech Support</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">10:00 AM</span>
+																											<span class="views ui-light airport modfont" style="display: none">0</span>
+								
+							<a class="headline" href="http://lifehacker.com/5922047/how-to-survive-without-a-dvd-drive-in-your-laptop">
+							<span class="headline-txt">How to Survive Without a DVD Drive In Your Laptop<span class="broughtby"></span></span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				</ul>
+
+				<a href="" id="load_more" class="stories modfont">More Stories…</a>
+
+				<ul id="post_list_cache" style="display: none;"><li></li></ul>
+
+				<ul id="sponsored_posts" style="display: none;">
+					<li></li>
+				</ul>
+				<script type="text/javascript">
+					jQuery('#sponsored_posts').load('/index.php?op=rightbar_sponsored&mode=headline&prev=', function() {
+						if (window.sponsored !== undefined && 1 ) {
+							window.sponsored.displaySponsoredPost();
+							window.sponsored.displayOldSponsoredPosts();
+						}
+					});
+				</script>
+			</div>
+			<div id="footer">
+				<div class="ad_640x90 default"></div>				<ul id="about_gawker_media">
+					<li><a rel="nofollow" href="/about/" title="Click here to go to About">About</a></li>
+					<li><a rel="nofollow" href="http://help.gawker.com/home/" title="Click here to go to Help">Help</a></li>
+					<li><a rel="nofollow" href="http://gawker.com/jobsatgawker" title="Jobs">Jobs</a></li>
+					<li><a title="Click here to go to Legal" href="http://advertising.gawker.com/legal/" rel="nofollow">Legal</a></li>
+					<li><a title="Click here to go to Legal" href="http://advertising.gawker.com/legal/privacy-policy/" rel="nofollow">Privacy</a></li>
+					<li><a title="Click here to go to Permissions" href="http://advertising.gawker.com/legal/permissions/" rel="nofollow">Permissions</a></li>
+					<li><a title="Click here to go to Advertising" href="http://advertising.gawker.com/" rel="nofollow">Advertising</a></li>
+					<li><a title="RSS Feed" href="/about/#subscribe">Subscribe</a></li>
+					<li><a title="Email a tip" href="mailto:&#116;&#105;&#112;&#115;&#64;&#108;&#105;&#102;&#101;&#104;&#97;&#99;&#107;&#101;&#114;&#46;&#99;&#111;&#109;">Send a tip</a></li>
+				</ul>
+
+<div id="snippet_rightbar_notification_templates"></div><script type="text/javascript">Snippets.push("snippet_rightbar_notification_templates", "\t\t\t\t<div id=\"notif_templates\" style=\"display: none;\">\n\t\t\t\t\t<span class=\"star\">%userName% starred %you%<\/span>\n\t\t\t\t\t<span class=\"unstar\">%userName% took away %your% star<\/span>\n\t\t\t\t\t<span class=\"promote\">%userName% promoted <a href=\"|commentLink|\" rel=\"nofollow\">%your% comment<\/a><\/span>\n\t\t\t\t\t<span class=\"demote\">%userName% demoted <a href=\"|commentLink|\" rel=\"nofollow\">%your% comment<\/a><\/span>\n\t\t\t\t\t<span class=\"reply\">%userName% replied to <a href=\"|commentLink|\" rel=\"nofollow\">%your% comment<\/a><\/span>\n\t\t\t\t\t<span class=\"approve\">%userName% approved %you%<\/span>\n\t\t\t\t\t<span class=\"pending\">%userName% took away %your% approval<\/span>\n\t\t\t\t\t<span class=\"removed\">%userName% has banned %you%<\/span>\n\t\t\t\t\t<span class=\"message\">%userName% sent you <a href=\"#messageLink#\" rel=\"nofollow\">a message<\/a><\/span>\n\t\t\t\t\t<span class=\"ssomigrate\">Convert your account. <a href=\"#\" rel=\"nofollow\" class=\"presence_control cn_ssousermigrate_link\">More info &raquo;<\/a><\/span>\n\t\t\t\t\t<div id=\"notif_container\">\n\t\t\t\t\t\t<div class=\"post notification\">\n\t\t\t\t\t\t\t<h6 class=\"headline\">%text%<\/h6>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div id=\"notif_header\">\n\t\t\t\t\t\t<strong>You have %count% new notification%notifplural%<\/strong>, click to view\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/div>");</script>
+<script>
+	var ganjaHost = 'Host: GM33<br/>Generated on: 2012-06-29 01:56:03';
+</script>
+			</div>
+
+		</div>
+
+		<div id="trackers">
+								<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-142218-1']);
+				_gaq.push(['_setDomainName', '.lifehacker.com']);
+				_gaq.push(['_trackPageview']);
+				_qoptions = { tags:"Gawker Geek" };
+				_qacct="p-d4P3FpSypJrlA";
+				gawker_getScript(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
+			</script>
+
+			<script type="text/javascript">
+				var quant_script = gawker_getScript("http://edge.quantserve.com/quant.js", function() {
+					window.quantcastRun = 1;
+				});
+			</script>
+
+			<div class="ad_chartbeat_end default"><script type="text/javascript">
+			var _sf_async_config={
+				uid: 3012,
+				domain: 'lifehacker.com',
+				path: '/5922144/find-out-which-app-is-constantly-using-location-services-and-killing-your-battery'
+			};
+			_sf_async_config.sections = "ios tip,iphone,ipod touch,ipad,battery life,battery,smartphones,ios,location services,gps,wtfimage";
+			_sf_async_config.authors = "Whitson Gordon";
+		</script></div>
+			<div id="tracker_loader"></div>
+			<img id="gawker_tracker_image" style="display: none;" height="0" width="0" class="track" alt="track" />
+
+			
+				</div>
+
+		<div id="presence_external_templates" class="presence_control_external instapaper_ignore"></div>
+
+
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/38/eum/rum-staging.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","a62ec163c8",148134,"ZwdVMkZSDxFVUkAKWF5NdBNHRw4PG2F8Mw1ADUQS",0,80,new Date().getTime()]);</script>
+
+		<script type="text/javascript" src="http://s.skimresources.com/js/33330X911647.skimlinks.js"></script>
+		
+	</body>
+
+</html>

@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-SCM_THEME_PROMPT_DIRTY=" ${red}✗"
-SCM_THEME_PROMPT_CLEAN=" ${bold_green}✓"
-SCM_THEME_PROMPT_PREFIX=" |"
-SCM_THEME_PROMPT_SUFFIX="${green}|"
+THEME_PROMPT_HOST='\H'
+SCM_THEME_PROMPT_DIRTY='💢'
+SCM_THEME_PROMPT_CLEAN='🌱'
+SCM_THEME_PROMPT_PREFIX='[ '
+SCM_THEME_PROMPT_SUFFIX='  ] '
+export LS_COLORS='di=92:fi=0:ln=94:pi=36:so=36:bd=36:cd=95:or=34:mi=0:ex=31:*.log=1;30:*.txt=34:*.mmd=34:*.markdown=34:*.md=01;34:*.scpt=7:*.rb=35:*.tgz=93:*.gz=93:*.zip=93:*.dmg=93:*.pkg=93:*.taskpaper=95;1:*.pdf=96:*.jpg=33:*.png=33:*.gif=33:*.svg=33'
 
 GIT_THEME_PROMPT_DIRTY=" ${red}✗"
 GIT_THEME_PROMPT_CLEAN=" ${bold_green}✓"
@@ -25,6 +27,23 @@ pwdtail () { #returns the last 2 fields of the working directory
   pwd|awk -F/ '{nlast = NF -1;print $nlast"/"$NF}'
 }
 
+tm-session() {
+  local sessionname
+  if [[ -n $TMUX ]]; then
+    sessionname=`tmux list-sessions | grep attached | awk -F: '{print $1}'`
+    echo -n $sessionname
+  fi
+}
+
+tm-window() {
+  local winname
+  if [[ -n $TMUX ]]; then
+    winname=`tmux list-windows | grep --color=never -E '^\d+: (.*)\*'| awk '{ print $2 }' | tr -d '*'`
+    echo -n $winname
+  fi
+}
+
+
 prompt_command () {
   if [ $? -eq 0 ]; then # set an error string for the prompt, if applicable
     ERRPROMPT=" "
@@ -32,7 +51,7 @@ prompt_command () {
     ERRPROMPT='->($?) '
   fi
   if [ "\$(type -t __git_ps1)" ]; then # if we're in a Git repo, show current branch
-      BRANCH="\$(__git_ps1 '[ %s ] ')"
+      BRANCH="\$(scm_prompt_info)"
   fi
   local TIME=`fmt_time` # format time for prompt string
   # local LOAD=`uptime|awk '{min=NF-2;print $min}'`
@@ -44,15 +63,24 @@ prompt_command () {
   local DKGRAY="\[\033[1;30m\]"
   local WHITE="\[\033[1;37m\]"
   local RED="\[\033[0;31m\]"
+  local MAGENTA="\[\033[0;35m\]"
   local BLACK="\[\033[0;30m\]"
   # return color to Terminal setting for text color
   local DEFAULT="\[\033[0;39m\]"
   # set the titlebar to the last 2 fields of pwd
-  local TITLEBAR='\[\e]2;`pwdtail`\a'
-  # export PS1="\[${TITLEBAR}\]${CYAN}[ ${BCYAN}\u${GREEN}@${BCYAN}\
-# \h${DKGRAY}(${LOAD}) ${WHITE}${TIME} ${CYAN}]${RED}$ERRPROMPT${GRAY}\
-# \w\n${GREEN}${BRANCH}${DEFAULT}$ "
-  export PS1="\[${TITLEBAR}\]${CYAN}[ ${BCYAN}\u${GREEN}@${BCYAN}\h${WHITE} ${TIME} ${CYAN}]${GRAY}\w\n${GREEN}${BRANCH}${DEFAULT}$ "
+
+  # if [[ -n $TMUX ]]; then # we're in a tmux session
+  #   TMUX_INFO=" (${GREEN}$(tm-session)${DKGRAY}:${MAGENTA}$(tm-window)${DEFAULT})"
+  # fi
+
+  if [ -n "$SSH_CLIENT$SSH2_CLIENT$SSH_TTY" ]; then # if we're coming in over SSH
+    hostcolor=${RED}
+    host="${BCYAN}@${hostcolor}\h"
+  else
+    host=""
+    hostcolor=${BCYAN}
+  fi
+  export PS1="${TITLEBAR}${CYAN}[ ${hostcolor}\u${host}${WHITE} ${TIME}${TMUX_INFO} ${CYAN}]${GRAY}\w\n${GREEN}${BRANCH}${DEFAULT}$ "
   # [[ $(history 1|sed -e "s/^[ ]*[0-9]*[ ]*//") =~ ^((cd|z|j|g)([ ]|$)) ]] && na
 }
 

@@ -1,0 +1,18 @@
+AOL Tech Wiki:/Volumes/Raptor/Users/ttscoff/Dropbox/Work/AolTech/repos/book.wiki
+Brett1.0:/Volumes/Raptor/Users/ttscoff/Sites/dev/brettterpstra/wp-content/themes/brett1.0
+Cheaters:/Volumes/Raptor/Users/ttscoff/Dropbox/Code/OddsAndEnds/cheaters
+Coughbutton:/Volumes/Raptor/Users/ttscoff/Sites/coughbutton
+FuckYeahMarkdown:/Volumes/Raptor/Users/ttscoff/Sites/dev/fuckyesmarkdown
+KeyBindings:/Volumes/Raptor/Users/ttscoff/Dropbox/Code/OddsAndEnds/KeyBindings
+MarkdownEditing:/Volumes/Raptor/Users/ttscoff/Library/Application Support/Sublime Text 2/Packages/MarkdownEditing
+MarkdownRules:/Volumes/Raptor/Users/ttscoff/Sites/dev/markdownrules
+Marked:/Volumes/Raptor/Users/ttscoff/Desktop/Code/marked
+NuE Decks:/Volumes/Raptor/Users/ttscoff/Dropbox/Public/engadget/nue-decks
+NuE:/Volumes/Raptor/Users/ttscoff/Sites/dev/nue
+Octopress:/Volumes/Raptor/Users/ttscoff/Sites/dev/octopress
+Proximity:/Volumes/Raptor/Users/ttscoff/Desktop/Code/proximity
+Slogger:/Volumes/Raptor/Users/ttscoff/scripts/slogger
+barf:/Volumes/Raptor/Users/ttscoff/.bash_it
+gdgtHTML:/Volumes/Raptor/Users/ttscoff/Dropbox/Work/AolTech/repos/gdgtHTML
+nuereport:/Volumes/Raptor/Users/ttscoff/Sites/dev/nuereport
+nvALT:/Volumes/Raptor/Users/ttscoff/Dropbox/Code/OddsAndEnds/nv

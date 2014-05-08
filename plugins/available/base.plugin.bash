@@ -80,9 +80,11 @@ mkcd ()
 
 lsgrep ()
 {
-    about 'search through directory contents with grep'
+    about 'search through directory tree by filename with ag'
     group 'base'
-    ls | grep "$*"
+    NEEDLE="($(echo $*|gsed "s/\([A-Za-z]\)/.*?[\1\u\1]/g"|gsed "s/ /\\|/g"))"
+    # echo $NEEDLE
+    ag -g "$NEEDLE"
 }
 
 
