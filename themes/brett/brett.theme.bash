@@ -51,7 +51,7 @@ prompt_command () {
     ERRPROMPT='->($?) '
   fi
   if [ "\$(type -t __git_ps1)" ]; then # if we're in a Git repo, show current branch
-      BRANCH="\$(scm_prompt_info)"
+      BRANCH="\$(__git_ps1 '[ %s ] ')"
   fi
   local TIME=`fmt_time` # format time for prompt string
   # local LOAD=`uptime|awk '{min=NF-2;print $min}'`
