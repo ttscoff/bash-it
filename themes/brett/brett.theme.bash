@@ -14,7 +14,7 @@ GIT_THEME_PROMPT_SUFFIX="${green}|"
 RVM_THEME_PROMPT_PREFIX="|"
 RVM_THEME_PROMPT_SUFFIX="|"
 
-fmt_time () { #format time just the way I likes it
+fmt_time () { #format time just the way I like it
   if [ `date +%p` = "PM" ]; then
     meridiem="pm"
   else
