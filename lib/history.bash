@@ -7,8 +7,8 @@ shopt -s histappend
 #
 # Erase duplicates
 # Bash History
-export HISTCONTROL="ignoredups"
 export HISTCONTROL=erasedups
+export HISTCONTROL="ignoredups"
 
 # resize history size
 export HISTSIZE=5000
